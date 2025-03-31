@@ -52,7 +52,7 @@ Please cite the publication if you use this code or research findings.
 
 **IMPORTANT:** Due to patient privacy regulations and the ethics approval (Mashhad University of Medical Sciences ethics committee IR.MUMS.REC.1395.326), the **original patient dataset cannot be shared publicly** in this repository.
 
-The script (`Ray7.py`) expects input data in the following format:
+The script (`tune_ohss_pipeline.py`) expects input data in the following format:
 *   Two separate Excel files: `train_data.xlsx` and `test_data.xlsx`.
 *   These files should be placed in a directory specified by the hardcoded paths `train_data_path` and `test_data_path` within the script (currently `/home/[USEER_NAME]/my_data/`). **You will need to modify these paths.**
 *   The files should contain the features listed in `feature_list` within the script (corresponding to Table 1 in the paper) and the target variable `OHSS`.
@@ -63,10 +63,10 @@ The script (`Ray7.py`) expects input data in the following format:
 
 ## Usage
 
-1.  **Modify Paths:** Open `Ray7.py` and update the `train_data_path`, `test_data_path`, and `log_directory_base` variables to point to your data location and desired output directory.
+1.  **Modify Paths:** Open `tune_ohss_pipeline.py` and update the `train_data_path`, `test_data_path`, and `log_directory_base` variables to point to your data location and desired output directory.
 2.  **Run the Script:** Execute the main script from your terminal within the activated virtual environment:
     ```bash
-    python Ray7.py
+    python tune_ohss_pipeline.py
     ```
 3.  **Process:** This script will initiate a Ray Tune hyperparameter optimization process, running a large number of trials (defined by `num_samples=15000`) to find the best combination of preprocessing steps, feature subsets, data augmentation techniques (SMOTE variants), models, and hyperparameters based on the `recall_mean` metric.
 4.  **Output:**
@@ -77,7 +77,7 @@ The script (`Ray7.py`) expects input data in the following format:
 
 ## Reproducing Results
 
-Running `Ray7.py` executes the hyperparameter search framework described in the paper. The goal is to find high-performing pipeline configurations for predicting complicated OHSS.
+Running `tune_ohss_pipeline.py` executes the hyperparameter search framework described in the paper. The goal is to find high-performing pipeline configurations for predicting complicated OHSS.
 
 *   The script explores the `search_space` defined within it.
 *   The best configuration printed at the end represents the optimal pipeline found in that specific run, maximizing the custom `recall_mean` metric.
