@@ -26,7 +26,7 @@ authors:
     affiliation: "Supporting the Family and the Youth of Population Research Core, Department of Obstetrics and Gynecology, Faculty of Medicine, Mashhad University of Medical Sciences, Mashhad, Iran"
     # orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
     email: "mahmoudiniam@mums.ac.ir"
-repository-code: "[URL of your GitHub Repo - To be added]"
+repository-code: "https://github.com/Aricept094/OHSS-Prediction-Imbalanced-Data.git"
 keywords:
   - "Ovarian Hyperstimulation Syndrome"
   - "OHSS"
