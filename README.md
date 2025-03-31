@@ -46,7 +46,11 @@ Please cite the publication if you use this code or research findings.
     ```
     Key dependencies include: `pandas`, `numpy`, `scikit-learn`, `ray[tune]`, `smote-variants`, `optuna`, `xgboost`, `lightgbm`, `shap`, `joblib`, `pyarrow`. *(Ensure `requirements.txt` is generated and included in the repo)*.
 
-4.  **Python Version:** Developed and tested using Python 3.x. *(Specify exact version if known, e.g., 3.9)*
+    **Important Note on `smote-variants`:**
+
+    To ensure reproducibility of the results presented in this work, a specific modification was required for the `smote-variants` library. The standard version (tested with version 1.0.0) contains an issue where the internal `model_selection` routine fails when evaluating parameter sets containing NumPy data types     (e.g., `np.False_`, `np.str_`) due to its use of         `ast.literal_eval`. therefore the requiremts.txt downloads a custom version with fix from the follwoing repo : https://github.com/Aricept094/smote_variants_literal_eval_fix_for_Ray.git@main#egg=smote_variants
+
+5.  **Python Version:** Developed and tested using Python 3.x. *(Specify exact version if known, e.g., 3.9)*
 
 ## Data
 
@@ -96,7 +100,7 @@ If you use this code or the findings from the associated study in your research,
 
 ## License
 
-This project is licensed under the [Choose a License - e.g., MIT License or Apache License 2.0]. See the `LICENSE` file for details. *
+This project is licensed under the MIT. See the `LICENSE` file for details. *
 ## Contact
 
 For questions regarding the research or code, please contact the author:
