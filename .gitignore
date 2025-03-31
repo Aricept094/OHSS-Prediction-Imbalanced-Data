@@ -1,0 +1,66 @@
+```gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution / packaging
+*.egg-info/
+.eggs/
+dist/
+build/
+develop-eggs/
+*.egg
+*.whl
+
+# Python environments
+venv/
+env/
+ENV/
+.env
+.venv
+
+# Data files (IMPORTANT: Uncomment if you add dummy data here, ensure real sensitive data is NEVER committed)
+# data/*.xlsx
+# data/*.csv
+*.xlsx
+# *.csv # Be careful if you need some CSVs committed
+
+# Output / Log directories (Based on script structure)
+results/
+ray_results/ # Default Ray Tune output directory if not overridden fully
+/home/aricept094/my_data/ray8/ # Avoid committing absolute paths if possible, use relative like 'results/'
+
+# Saved models and intermediate files
+*.joblib
+*.pkl
+*.feather
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE config files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Notebook checkpoints
+.ipynb_checkpoints
+
+# Logging tools
+.wandb/
+wandb/
+.aim/
+
+# Other
+*.log
+*.swp
+*~
