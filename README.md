@@ -22,9 +22,13 @@ The best model identified in the associated study utilized **IPADE-ID** for data
 
 **Authors:** Arash Ziaee¹, Hamed Khosravi², Tahereh Sadeghi³, Imtiaz Ahmed⁴, Maliheh Mahmoudinia⁵*
 
-(*Affiliations listed in the paper*)
+1.	General Physician, Student Research Committee, Faculty of Medicine, Mashhad University of Medical Sciences, Mashhad, Iran
+2.	Department of Industrial & Management Systems Engineering, West Virginia University, Morgantown, WV, US
+3.	Assistant Professor of Nursing, Department of Pediatrics, School of Nursing and Midwifery, Nursing and Midwifery Care Research Center, Akbar Hospital, Mashhad University of Medical Sciences, Mashhad, Iran
+4.	Assistant Professor, Department of Industrial & Management Systems Engineering, West Virginia University, Morgantown, WV, US
+5.	Assistant Professor of Obstetrics & Gynecology, Fellowship of Infertility, Supporting the Family and the Youth of Population Research Core, Department of Obstetrics and Gynecology, Faculty of Medicine, Mashhad University of Medical Sciences, Mashhad, Iran
 
-**Status:** (e.g., Submitted / Under Review / Published in [Journal Name] / Link to Preprint) - *[Please update this when available]*
+**Status:** (Currently Under Review / Link to Preprint) - (https://www.medrxiv.org/content/10.1101/2024.04.17.24305980v1)
 
 Please cite the publication if you use this code or research findings.
 
