@@ -95,7 +95,7 @@ The script (`tune_ohss_pipeline.py`) expects input data in the following format:
     *   `reasoninfertility`: Identified cause or source of infertility (Categorical: e.g., Female Factor, Male Factor, Both, Unexpected/Unexplained).
     *   `Typeofcunsumptiondrug`: Specific type of stimulation drug used (Categorical: e.g., Cinnal-f, Gonal-f, hMG).
     *   `typeoftrigger`: Type of drug used for final oocyte maturation trigger (Categorical: e.g., GnRH Agonist, hCG, Dual Trigger).
-    *   `Typedrug`: Type of Drug Regimen/Protocol Detail (Categorical - *Note: Exact definition may depend on specific study encoding*).
+    *   `Typedrug`: Type of Drug Regimen/Protocol Detail (Categorical).
     *   `pregnancy`: History of previous pregnancy (Categorical: Positive/Negative).
     *   `mense`: Regularity of menstrual cycle at baseline (Categorical: Regular/Irregular).
     *   `Infertility`: Type of infertility at baseline (Categorical: Primary/Secondary).
